@@ -6,6 +6,7 @@
 
 html {
   font-family: "Poppins";
+  letter-spacing: 0.9px;
 }
 
 .registration {
@@ -27,7 +28,7 @@ html {
 
 .registration__body {
   width: 350px;
-  height: 500px;
+  height: 540px;
   display: flex;
   flex-direction: column;
   padding: 20px 30px;
@@ -84,7 +85,7 @@ input:focus ~ label,
 input:valid ~ label {
   top: -20px;
   font-size: 0.9rem;
-  color: #F8CF25;
+  color: #f8cf25;
 }
 
 label {
@@ -113,4 +114,116 @@ button {
 button:hover {
   color: #fff;
   background: transparent;
+}
+
+.registration__author {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.registration__account {
+  margin-top: 20px;
+}
+
+.registration__account a {
+  color: #f8cf25;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.registration__account a:hover {
+  text-decoration: underline;
+}
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background: url("./images/bg.png") no-repeat;
+  background-size: cover;
+}
+
+.login__container {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.login__body {
+  width: 350px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.login__logo {
+  width: 100px;
+  height: 100px;
+  padding: 8px 0 0 0;
+  margin: 0 auto;
+  margin-top: -70px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+.login__logo img {
+  width: 100%;
+}
+
+.login__title h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.login__full-name,
+.login__email,
+.login__password,
+.login__re-password {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 35px auto;
+}
+
+.login__author {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  padding: 5px 20px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.login__account {
+  margin-top: 20px;
+}
+
+.login__account a {
+  color: #f8cf25;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.login__account a:hover {
+  text-decoration: underline;
 }
