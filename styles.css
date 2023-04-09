@@ -9,6 +9,55 @@ html {
   letter-spacing: 0.9px;
 }
 
+input {
+  width: 100%;
+  padding: 4px 8px;
+  font-size: 1rem;
+  font-family: "Poppins";
+  color: #fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 0.9rem;
+  color: #f8cf25;
+}
+
+label {
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  white-space: nowrap;
+  text-align: left;
+  transition: 0.3s;
+}
+
+button {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Poppins";
+  letter-spacing: 0.8px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  color: #fff;
+  background: transparent;
+}
+
+/*======== Ro'yxatdan o'tish sahifasi uchun style'lar ========*/
+
 .registration {
   width: 100vw;
   height: 100vh;
@@ -69,53 +118,6 @@ html {
   margin: 35px auto;
 }
 
-input {
-  width: 100%;
-  padding: 4px 8px;
-  font-size: 1rem;
-  font-family: "Poppins";
-  color: #fff;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-}
-
-input:focus ~ label,
-input:valid ~ label {
-  top: -20px;
-  font-size: 0.9rem;
-  color: #f8cf25;
-}
-
-label {
-  position: absolute;
-  left: 8px;
-  top: 3px;
-  white-space: nowrap;
-  text-align: left;
-  transition: 0.3s;
-}
-
-button {
-  width: 100%;
-  padding: 8px;
-  font-size: 1rem;
-  font-weight: 500;
-  font-family: "Poppins";
-  letter-spacing: 0.8px;
-  border-radius: 20px;
-  border: 1px solid #fff;
-  background: #fff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  color: #fff;
-  background: transparent;
-}
-
 .registration__author {
   position: absolute;
   bottom: 40px;
@@ -141,6 +143,8 @@ button:hover {
 .registration__account a:hover {
   text-decoration: underline;
 }
+
+/*======== Kirish sahifasi uchun style'lar ========*/
 
 .login {
   width: 100vw;
